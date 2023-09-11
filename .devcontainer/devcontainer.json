@@ -1,7 +1,11 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/dotnet:1": {},
-    
+  "name": "Custom .NET 4.7.2",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    // List your desired VS Code extensions here (optional)
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "dotnet.version": "4.7.2" // Specify the desired .NET Framework version
   }
 }
